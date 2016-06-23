@@ -18,3 +18,19 @@ for i in  0..20
   puts new_num
 
 end
+
+
+def fib(old, older)
+
+  new_num = old + older
+
+  puts new_num
+
+  if new_num < 100
+    fib(new_num, old)
+  end
+
+
+end
+
+fib(0,1)
